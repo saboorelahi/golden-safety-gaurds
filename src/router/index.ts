@@ -1,6 +1,11 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
+import Services from "../views/Services.vue"
+import Careers from "../views/Careers.vue"
+import Contacts from "../views/Contacts.vue"
+
+
 
 Vue.use(VueRouter);
 
@@ -11,6 +16,11 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
+    path: "/services",
+    name: "Services",
+    component: Services,
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
@@ -18,6 +28,16 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+  {
+    path: "/careers",
+    name: "Careers",
+    component: Careers,
+  },
+  {
+    path: "/contact",
+    name: "Contacts",
+    component: Contacts,
   },
 ];
 
