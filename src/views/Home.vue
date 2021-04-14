@@ -1,9 +1,6 @@
 <template>
   <div>
-    <v-btn
-      elevation="2"
-    >
-    Home with Vuetify </v-btn>
+    
   </div>
 
 </template>
