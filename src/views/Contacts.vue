@@ -4,47 +4,95 @@
       <v-col class="myDiv" cols="12">
         <v-img
           class="bg"
-          :src="require('../assets/director.jpg')"
-          height="700px"
+          :src="require('../assets/contact.jpg')"
+          height="1000px"
         >
         </v-img>
         <v-row class="pa-5">
-          <v-col cols="6" sm="6" class="pt-0">
-            <v-sheet elevation="10" rounded="xl">
+          <v-col class="6">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffnqt-bM4wnrint-wKXIEdGAO2uwy9_YZdqj3qI6aDRW4nNA/viewform?embedded=true" width="640" height="446" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </v-col>
+          <v-col class="6">
+            <v-sheet class="mt-3" elevation="10" rounded="xl">
+              <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
+                Reach us at Office
+              </v-sheet>
+
+              <v-div class="pa-4">
+                <v-chip-group active-class="primary--text" column>
+                  <div class="pt-2 pl-4 pr-3">
+                    Phone
+                  </div>
+                  <v-chip>
+                    01615369171
+                  </v-chip>
+                </v-chip-group>
+                <v-chip-group active-class="primary--text" column>
+                  <div class="pt-2 pl-4 pr-3">
+                    Email
+                  </div>
+                  <v-chip>
+                    info@goldensafetyguard.co.Uk
+                  </v-chip>
+                </v-chip-group>
+              </v-div>
+            </v-sheet>
+            <v-sheet class="mt-5" elevation="10" rounded="xl">
               <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
                 Director
               </v-sheet>
 
               <div class="pa-4">
-                <v-chip-group active-class="primary--text" column>
-                  <div class="pt-2 pr-3">
-                    Person
-                  </div>
-                  <v-chip>
-                    Hina Javed
-                  </v-chip>
-                </v-chip-group>
-                <v-chip-group active-class="primary--text" column>
-                  <div class="pt-2 pr-4">
-                    Phone
-                  </div>
-                  <v-chip>
-                    07310001038
-                  </v-chip>
-                </v-chip-group>
-                <v-chip-group active-class="primary--text" column>
-                  <div class="pt-2 pr-4">
-                    Email
-                  </div>
-                  <v-chip>
-                    Jhina786@yahoo.com
-                  </v-chip>
-                </v-chip-group>
+                <v-row>
+                  <v-col class="10">
+                    <v-chip-group active-class="primary--text" column>
+                      <div class="pt-2 pr-3">
+                        Person
+                      </div>
+                      <v-chip>
+                        Hina Javed
+                      </v-chip>
+                    </v-chip-group>
+                    <v-chip-group active-class="primary--text" column>
+                      <div class="pt-2 pr-4">
+                        Phone
+                      </div>
+                      <v-chip>
+                        07310001038
+                      </v-chip>
+                    </v-chip-group>
+                    <v-chip-group active-class="primary--text" column>
+                      <div class="pt-2 pr-4">
+                        Email
+                      </div>
+                      <v-chip>
+                        Jhina786@yahoo.com
+                      </v-chip>
+                    </v-chip-group>
+                    <v-chip-group active-class="primary--text" column>
+                      <div class="pt-2 pr-4">
+                        Linkedin
+                      </div>
+                      <v-chip>
+                        http://linkedin.com/in/hina-adnan-3976bb99
+                      </v-chip>
+                    </v-chip-group>
+                  </v-col>
+                  <!-- <v-col class="6">
+                    <div>
+                    <v-img
+                      class="bg"
+                      :src="require('../assets/about1.jpg')"
+                      height="800px"
+                    >
+                    </v-img>
+                    </div>
+                  </v-col> -->
+                </v-row>
               </div>
             </v-sheet>
-          </v-col>
-          <v-col cols="6" sm="6" class="pt-16">
-            <v-sheet elevation="10" rounded="xl">
+
+            <v-sheet class="mt-5" elevation="10" rounded="xl">
               <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
                 General Manager
               </v-sheet>
@@ -74,35 +122,15 @@
                     Shaukatadnan@yahoo.co.Uk
                   </v-chip>
                 </v-chip-group>
+                <v-chip-group active-class="primary--text" column>
+                  <div class="pt-2 pr-4">
+                    Linkedin
+                  </div>
+                  <v-chip>
+                    https://www.linkedin.com/in/adnan-shaukat-a06206151
+                  </v-chip>
+                </v-chip-group>
               </div>
-            </v-sheet>
-          </v-col>
-        </v-row>
-        <v-row class="pl-5">
-          <v-col cols="6" sm="6" class="pt=0">
-            <v-sheet elevation="10" rounded="xl">
-              <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
-                Reach us at Office
-              </v-sheet>
-
-              <v-div class="pa-4">
-                <v-chip-group active-class="primary--text" column>
-                  <div class="pt-2 pl-4 pr-3">
-                    Phone
-                  </div>
-                  <v-chip>
-                    01615369171
-                  </v-chip>
-                </v-chip-group>
-                <v-chip-group active-class="primary--text" column>
-                  <div class="pt-2 pl-4 pr-3">
-                    Email
-                  </div>
-                  <v-chip>
-                    info@goldensafetyguard.co.Uk
-                  </v-chip>
-                </v-chip-group>
-              </v-div>
             </v-sheet>
           </v-col>
         </v-row>
