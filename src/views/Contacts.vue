@@ -5,13 +5,13 @@
         <v-img
           class="bg"
           :src="require('../assets/director.jpg')"
-          height="330px"
+          height="700px"
         >
         </v-img>
         <v-row class="pa-5">
           <v-col cols="6" sm="6" class="pt-0">
             <v-sheet elevation="10" rounded="xl">
-              <v-sheet class="pa-3 primary text-center" dark rounded="t-xl">
+              <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
                 Director
               </v-sheet>
 
@@ -45,7 +45,7 @@
           </v-col>
           <v-col cols="6" sm="6" class="pt-16">
             <v-sheet elevation="10" rounded="xl">
-              <v-sheet class="pa-3 primary text-center" dark rounded="t-xl">
+              <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
                 General Manager
               </v-sheet>
 
@@ -75,6 +75,34 @@
                   </v-chip>
                 </v-chip-group>
               </div>
+            </v-sheet>
+          </v-col>
+        </v-row>
+        <v-row class="pl-5">
+          <v-col cols="6" sm="6" class="pt=0">
+            <v-sheet elevation="10" rounded="xl">
+              <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
+                Reach us at Office
+              </v-sheet>
+
+              <v-div class="pa-4">
+                <v-chip-group active-class="primary--text" column>
+                  <div class="pt-2 pl-4 pr-3">
+                    Phone
+                  </div>
+                  <v-chip>
+                    01615369171
+                  </v-chip>
+                </v-chip-group>
+                <v-chip-group active-class="primary--text" column>
+                  <div class="pt-2 pl-4 pr-3">
+                    Email
+                  </div>
+                  <v-chip>
+                    info@goldensafetyguard.co.Uk
+                  </v-chip>
+                </v-chip-group>
+              </v-div>
             </v-sheet>
           </v-col>
         </v-row>
@@ -117,7 +145,7 @@ export default Vue.extend({
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.2;
+  opacity: 0.3;
   width: 100%;
   height: 300px;
 }
