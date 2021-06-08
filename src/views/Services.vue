@@ -11,7 +11,7 @@
           cols="12"
           md="4"
         >
-          <v-hover v-slot="{ hover }" open-delay="473">
+          <v-hover v-slot="{ hover }" open-delay="200">
             <v-card
               :elevation="hover ? 12 : 2"
               :class="{ 'on-hover': hover }"
@@ -77,13 +77,13 @@ export default Vue.extend({
         },
         {
           title: '',
-          text: 'High Rise Buildings',
+          text: 'Corporate Sector',
           subtext: '',
           img: 'buildings.jpg',
         },
         {
           title: '',
-          text: 'Shopping Centers',
+          text: 'Retail Centers',
           subtext: '',
           img: 'shopping.jpg',
         },

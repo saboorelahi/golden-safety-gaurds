@@ -1,8 +1,12 @@
 <template>
   <div>
-    fwiefuyuyg ffr <br /> 
-    fgff 3rfh 3riuh3rg h3r <br />
-    g3rhghg gyh
+    <v-carousel hide-delimiters cycle=true height=350 show-arrows-on-hover=true >
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+      ></v-carousel-item>
+  </v-carousel>
   </div>
 </template>
 
@@ -12,8 +16,23 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Home",
-  // components: {
-  //   HelloWorld,
-  // },
+  data () {
+      return {
+        items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          },
+        ],
+      }
+    },
 });
 </script>
