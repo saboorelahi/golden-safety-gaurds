@@ -6,7 +6,8 @@
         :key="i"
         :src="item.src"
       ></v-carousel-item>
-  </v-carousel>
+    </v-carousel>
+  
   </div>
 </template>
 

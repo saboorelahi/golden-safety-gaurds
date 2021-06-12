@@ -23,27 +23,27 @@
                 <v-expand-transition>
                   <div
                     v-if="hover"
-                    class="d-flex transition-fast-in-fast-out primary darken-2 v-card--reveal display-0 white--text"
+                    class="d-flex transition-fast-in-fast-out grey darken-2 v-card--reveal display-0 white--text"
                     style="height: 100%;"
                   >
                     All of our security guards are trained to the recognized professional standard in static and patrol duties and are licensed by the security industry Authority (SIA)
                     We can provide manned guarding security guards and services for {{item.text}} sites in various parts of country
                   </div>
                 </v-expand-transition>
-                <v-card-title class="title red--text">
+                <v-card-title class="title white--text">
                   <v-row
                     class="fill-height flex-column pa-3"
                   >
                     <!-- <p class="pt-16 subheading justify-center text-center">
                       {{ item.title }}
                     </p> -->
-                    <div class="pt-0">
-                      <p class="ma-0 body-1 font-weight-bold font-italic text-left">
+                    <div class="pt-16">
+                      <p class="ma-0 headline font-weight-bold font-italic text-center">
                         {{ item.text }}
                       </p>
-                      <p class="caption font-weight-medium font-italic text-left">
+                      <!-- <p class="caption font-weight-medium font-italic text-center">
                         {{ item.subtext }}
-                      </p>
+                      </p> -->
                     </div>
                   </v-row>
                 </v-card-title>
@@ -91,19 +91,13 @@ export default Vue.extend({
           title: '',
           text: 'Hospitality Industry',
           subtext: '',
-          img: 'health.jpg',
+          img: 'hospitality.jpg',
         },
         {
           title: '',
-          text: 'Front of house  Security',
+          text: 'Home & Reception Security',
           subtext: '',
-          img: 'frontHouse.jpg',
-        },
-        {
-          title: '',
-          text: 'Reception',
-          subtext: '',
-          img: 'reception.jpg',
+          img: 'H&R.jpg',
         },
         {
           title: '',
@@ -155,7 +149,7 @@ export default Vue.extend({
   align-items: center;
   bottom: 0;
   justify-content: center;
-  opacity: .9;
+  opacity: 1;
   position: absolute;
   width: 100%;
 }
