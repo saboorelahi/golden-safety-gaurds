@@ -4,15 +4,15 @@
       <v-col class="myDiv" cols="12">
         <v-img
           class="bg"
-          :src="require('../assets/hire.jpg')"
-          height="520px"
+          :src="require('../assets/careers.jpg')"
+          height="598px"
         >
         </v-img>
         <v-row class="pa-5">
           <v-col cols="8" sm="8" class="pt-0"></v-col>
           <v-col cols="4" sm="4" class="pt-4">
             <v-sheet elevation="10" rounded="xl">
-              <v-sheet class="pa-3 primary text-center" dark rounded="t-xl">
+              <v-sheet class="pa-3 text-center" dark rounded="t-xl" color="#A98C47">
                 Openings
               </v-sheet>
               <div class="pa-5">

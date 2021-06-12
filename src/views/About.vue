@@ -1,25 +1,52 @@
 <template>
-  <div>
-    <v-timeline class="pa-12">
-      <v-timeline-item v-for="(item, i) in items" :key="i" large>
-        <template v-slot:icon>
-          <v-avatar>
-            <img src="../assets/info.png" />
-          </v-avatar>
-        </template>
-        <template v-slot:opposite>
-          <div class="pt-2">{{ i + 1 }}</div>
-        </template>
-        <v-card class="elevation-2">
-          <v-card-title class="headline">
-            {{ item.title }}
-          </v-card-title>
-          <v-card-text>
-            {{ item.text }}
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
+  <div class="pt-5">
+    <v-row class="pt-3">
+      <v-col class="myDiv" cols="12">
+        <v-img
+          class="bg"
+          :src="require('../assets/about3.jpg')"
+          height="1290px"
+        >
+        </v-img>
+        <v-row class="pa-5 pt-2">
+          <v-col cols="12">
+            <v-card
+              elevation="3"
+              outlined
+              shaped
+              class="brown lighten-5"
+            >
+              <p class="quote text-justify font-weight-bold pa-5 pb-2 font-italic">
+               "Welcome to Golden safety property guards services , a company established in 2016 and open its busses in UAE and within a span of shorttime have decided 
+                to expand its services in UK in 2020, built on the strength of a strong, highly experienced management team prioritising
+                quality of service for all our customers which is borne out by our successes in securing repeat businesses and establishing long standing relationships.
+                GSPGS are proud to have a team who can respond to all our clients’ needs working in full collaboration with both our clients’ teams and internally to deliver 
+                the best in class services and solutions.The vision and ethos of the company is for continuous improvement with customer satisfaction a priority, and we are committed 
+                to maintaining and improving our processes and procedures" ~ Director's message
+              </p>
+            </v-card>
+            <v-timeline class="pa-12">
+              <v-timeline-item v-for="(item, i) in items" :key="i" large>
+                <template v-slot:icon>
+                  <v-avatar color="#A98C47">
+                  </v-avatar>
+                </template>
+                <template v-slot:opposite>
+                </template>
+                <v-card class="elevation-2 ">
+                  <v-card-title class="headline cyan darken-3">
+                    {{ item.title }}
+                  </v-card-title>
+                  <v-card-text class="text-justify brown lighten-5 font-weight-bold pt-2">
+                    {{ item.text }}
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+            </v-timeline>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -72,7 +99,26 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-/* .bacg {
-  background-color: #E5E5E5;
-} */
+.quote {
+  font-family: Kaushan Script;
+  font-size: 18px;
+}
+
+.myDiv {
+  position: relative;
+  z-index: 1;
+}
+
+.myDiv .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  width: 100%;
+  height: 300px;
+  filter: blur(5px);
+}
 </style>>

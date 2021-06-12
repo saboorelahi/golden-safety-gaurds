@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-4">
+  <v-container class="pa-5">
     <v-row
       class="fill-height"
       align="center"
@@ -152,6 +152,18 @@ export default Vue.extend({
   opacity: 1;
   position: absolute;
   width: 100%;
+}
+
+ .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 300px;
 }
 
 </style>
