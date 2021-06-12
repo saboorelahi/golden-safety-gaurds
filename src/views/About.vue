@@ -4,7 +4,7 @@
       <v-timeline-item v-for="(item, i) in items" :key="i" large>
         <template v-slot:icon>
           <v-avatar>
-            <img src="../assets/info.jpg" />
+            <img src="../assets/info.png" />
           </v-avatar>
         </template>
         <template v-slot:opposite>
@@ -32,17 +32,15 @@ export default Vue.extend({
     items: [
       {
         img: "Government Departments",
-        opposite: `Tus eu perfecto`,
-        title: "GSP",
+        title: "Head Office",
         text: `Security Services has its Head office located in Dubai established in year 2016, we have well
             trained and experienced staff and being considered as one of the professional security services 
             provider. Now we have decided to establish a branch in London.`,
       },
       {
         img: "Government Departments",
-        opposite: `Tus eu perfecto`,
-        title: "GSP",
-        text: `prides itself on a non-violent response to any type of critical situation or incident. With our 
+        title: "Our Work, Our pride",
+        text: `Prides itself on a non-violent response to any type of critical situation or incident. With our 
             courteous, professional, trained and well experienced security officers we can provide you a safe
             and secure environment to meet your business requirement. We are also well experienced and
             organized to assist you in any kind of event preparation and fully committed to ensure that your 
@@ -50,8 +48,7 @@ export default Vue.extend({
       },
       {
         img: "Government Departments",
-        opposite: `Tus eu perfecto`,
-        title: "GSP",
+        title: "Quality",
         text: `GSP Security-UK recognizes the need to prove quality services. In this regard, GSP employs
             various levels of supervisory staff which includes the operations team and static supervisors. All sites
             are regularly visited in order to ensure the delivery of the required standard of services. We have 24 hrs. 
@@ -60,8 +57,7 @@ export default Vue.extend({
       },
       {
         img: "Government Departments",
-        opposite: `Tus eu perfecto`,
-        title: "GSP",
+        title: "Professional Staff",
         text: `We believe that continues training and education is vital for staff to be an effective security officer in
             any of these capacities. We always prefer to recruit well educated personals for the job and conduct few oral 
             and written tests including negative vetting process before finalizing any candidate, which includes verbal approach 

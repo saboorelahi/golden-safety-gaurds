@@ -16,9 +16,9 @@
                 Openings
               </v-sheet>
               <div class="pa-5">
-                THisd dh2e de2kdehfr fr frhjfg r ferj
-                duye2gdyt2ede2de dehy dvyuef r3eyfrty fg r
-                frgyufgrfg eryufergyu. 
+                We are proud to offer good working conditions for our employees and if 
+                you are someone who is eager and suitable for security then kindly share your 
+                CV 
                 <strong>Jhina786@yahoo.com</strong>
               </div>
             </v-sheet>

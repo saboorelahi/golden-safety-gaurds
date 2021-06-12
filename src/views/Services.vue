@@ -26,7 +26,7 @@
                     class="d-flex transition-fast-in-fast-out grey darken-2 v-card--reveal display-0 white--text"
                     style="height: 100%;"
                   >
-                    All of our security guards are trained to the recognized professional standard in static and patrol duties and are licensed by the security industry Authority (SIA)
+                    All of our security guards are trained to the recognized professional standard in static and patrol duties and are licensed by the security industry Authority (SIA).
                     We can provide manned guarding security guards and services for {{item.text}} sites in various parts of country
                   </div>
                 </v-expand-transition>
