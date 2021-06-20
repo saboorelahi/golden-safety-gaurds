@@ -19,7 +19,7 @@
                 We are proud to offer good working conditions for our employees and if 
                 you are someone who is eager and suitable for security then kindly share your 
                 CV 
-                <strong>Jhina786@yahoo.com</strong>
+                <strong>info@goldensafetyguard.co.Uk</strong>
               </div>
             </v-sheet>
           </v-col>

@@ -10,21 +10,6 @@
         </v-img>
         <v-row class="pa-5 pt-2">
           <v-col cols="12">
-            <v-card
-              elevation="3"
-              outlined
-              shaped
-              class="brown lighten-5"
-            >
-              <p class="quote text-justify font-weight-bold pa-5 pb-2 font-italic">
-               "Welcome to Golden safety property guards services , a company established in 2016 and open its busses in UAE and within a span of shorttime have decided 
-                to expand its services in UK in 2020, built on the strength of a strong, highly experienced management team prioritising
-                quality of service for all our customers which is borne out by our successes in securing repeat businesses and establishing long standing relationships.
-                GSPGS are proud to have a team who can respond to all our clients’ needs working in full collaboration with both our clients’ teams and internally to deliver 
-                the best in class services and solutions.The vision and ethos of the company is for continuous improvement with customer satisfaction a priority, and we are committed 
-                to maintaining and improving our processes and procedures" ~ Director's message
-              </p>
-            </v-card>
             <v-timeline class="pa-12">
               <v-timeline-item v-for="(item, i) in items" :key="i" large>
                 <template v-slot:icon>
@@ -62,7 +47,7 @@ export default Vue.extend({
         title: "Head Office",
         text: `Security Services has its Head office located in Dubai established in year 2016, we have well
             trained and experienced staff and being considered as one of the professional security services 
-            provider. Now we have decided to establish a branch in London.`,
+            provider. Now we have decided to establish a branch in UK.`,
       },
       {
         img: "Government Departments",
@@ -85,7 +70,7 @@ export default Vue.extend({
       {
         img: "Government Departments",
         title: "Professional Staff",
-        text: `We believe that continues training and education is vital for staff to be an effective security officer in
+        text: `We believe that continuous training and education is vital for staff to be an effective security officer in
             any of these capacities. We always prefer to recruit well educated personals for the job and conduct few oral 
             and written tests including negative vetting process before finalizing any candidate, which includes verbal approach 
             methods with an awareness of state and local protocols. All employees are DBS checked and certified according to their 
@@ -99,10 +84,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.quote {
-  font-family: Kaushan Script;
-  font-size: 18px;
-}
 
 .myDiv {
   position: relative;

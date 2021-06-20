@@ -39,7 +39,7 @@
             </v-sheet>
             <v-sheet class="mt-5" elevation="10" rounded="xl">
               <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
-                Director
+                Operational Manager
               </v-sheet>
 
               <div class="pa-4">
@@ -74,7 +74,7 @@
                         Linkedin
                       </div>
                       <v-chip>
-                        http://linkedin.com/in/hina-adnan-3976bb99
+                        <a href="http://linkedin.com/in/hina-adnan-3976bb99">Reach me at LinkdIn</a>
                       </v-chip>
                     </v-chip-group>
                   </v-col>
@@ -127,7 +127,7 @@
                     Linkedin
                   </div>
                   <v-chip>
-                    https://www.linkedin.com/in/adnan-shaukat-a06206151
+                    <a href="https://www.linkedin.com/in/adnan-shaukat-a06206151">Reach me at LinkdIn</a>
                   </v-chip>
                 </v-chip-group>
               </div>
