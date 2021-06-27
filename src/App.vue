@@ -1,37 +1,117 @@
 <template>
   <v-app>
     <div id = "app">
-      <div >
-      <img src="./assets/logo.png" width="200" height="100"  >
+      <v-row>
+        <v-col cols="4">
+          <v-img 
+            :src="require(`./assets/logo.png`)" 
+            width="200" 
+            height="100">
+          </v-img>
+        </v-col>
+        <v-col cols="8">
+          <div>
+            <v-footer
+              dark
+              padless
+            >
+              <v-card
+                class="flex"
+                flat
+                tile
+                
+              >
+                <v-card-title class="white">
+                  <v-spacer></v-spacer>
+                  <v-btn
+                    v-for="icon in icons"
+                    :key="icon"
+                    class="mx-4 black"
+                    
+                    icon
+                  >
+                    <v-icon size="24px">
+                      {{ icon }}
+                    </v-icon>
+                  </v-btn>
+                </v-card-title>
+              </v-card>
+            </v-footer>
+          </div>
+        </v-col>
+      </v-row>
+      <div>
+        <v-tabs 
+          background-color="white"
+          grow
+          class="hidden-sm-and-down"
+          >
+          <v-tab to="/">Home</v-tab>
+          <v-tab to="/services" >Services</v-tab>
+          <v-tab to="/about">About</v-tab>
+          <v-tab to="/careers" >Careers</v-tab>
+          <v-tab to="/contact" >Contact Us</v-tab>
+        </v-tabs>
+        <v-tabs 
+          background-color="white"
+          grow
+          class="hidden-sm-and-up"
+          vertical
+          >
+          <v-tab to="/">Home</v-tab>
+          <v-tab to="/services" >Services</v-tab>
+          <v-tab to="/about">About</v-tab>
+          <v-tab to="/careers" >Careers</v-tab>
+          <v-tab to="/contact" >Contact Us</v-tab>
+        </v-tabs>
       </div>
-      <v-tabs 
-      background-color="white"
-      grow
-      class="hidden-sm-and-down"
-        >
-        <v-tab to="/">Home</v-tab>
-        <v-tab to="/services" >Services</v-tab>
-        <v-tab to="/about">About</v-tab>
-        <v-tab to="/careers" >Careers</v-tab>
-        <v-tab to="/contact" >Contact Us</v-tab>
-      </v-tabs>
-      <v-tabs 
-      background-color="white"
-      grow
-      class="hidden-sm-and-up"
-      vertical
-        >
-        <v-tab to="/">Home</v-tab>
-        <v-tab to="/services" >Services</v-tab>
-        <v-tab to="/about">About</v-tab>
-        <v-tab to="/careers" >Careers</v-tab>
-        <v-tab to="/contact" >Contact Us</v-tab>
-      </v-tabs>
       <router-view></router-view>
+      <div>
+        <v-footer
+          dark
+          padless
+        >
+          <v-card
+            class="flex cardColor"
+            flat
+            tile
+          >
+            <v-card-title class="cardColor">
+              <strong class="subheading">Get connected with us on social networks!</strong>
+
+              <v-spacer></v-spacer>
+
+              <v-btn
+                v-for="icon in icons"
+                :key="icon"
+                class="mx-4"
+                dark
+                icon
+              >
+                <v-icon size="24px">
+                  {{ icon }}
+                </v-icon>
+              </v-btn>
+            </v-card-title>
+          </v-card>
+        </v-footer>
+      </div>
     </div>
-</v-app>
+  </v-app>
 </template>
 
+<script>
+  export default {
+    data: () => ({
+      icons: [
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-linkedin',
+        'mdi-instagram',
+      ],
+    }),
+  }
+</script>
 
 <style lang="scss">
 #app {
@@ -58,5 +138,9 @@
 .abc {
   background-color: #42b983;
 }
+
+ .cardColor {
+  background-color: #A98C47;
+ }
 
 </style>

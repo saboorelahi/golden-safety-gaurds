@@ -1,35 +1,34 @@
 <template>
-  <div class="pt-5">
-    <v-row class="pt-3">
+  <div class="pt-0">
+    <v-row class="pt-0">
       <v-col class="myDiv" cols="12">
         <v-img
-          class="bg"
           :src="require('../assets/about3.jpg')"
-          height="1290px"
+          height="1120px"
         >
+          <v-row class="pa-5">
+            <v-col cols="12">
+              <v-timeline class="pa-12">
+                <v-timeline-item v-for="(item, i) in items" :key="i" large>
+                  <template v-slot:icon>
+                    <v-avatar color="grey">
+                    </v-avatar>
+                  </template>
+                  <template v-slot:opposite>
+                  </template>
+                  <v-card class="elevation-2 ">
+                    <v-card-title class="headline cardColor darken-3">
+                      {{ item.title }}
+                    </v-card-title>
+                    <v-card-text class="text-justify brown lighten-5 font-weight-bold pt-2">
+                      {{ item.text }}
+                    </v-card-text>
+                  </v-card>
+                </v-timeline-item>
+              </v-timeline>
+            </v-col>
+          </v-row>
         </v-img>
-        <v-row class="pa-5 pt-2">
-          <v-col cols="12">
-            <v-timeline class="pa-12">
-              <v-timeline-item v-for="(item, i) in items" :key="i" large>
-                <template v-slot:icon>
-                  <v-avatar color="#A98C47">
-                  </v-avatar>
-                </template>
-                <template v-slot:opposite>
-                </template>
-                <v-card class="elevation-2 ">
-                  <v-card-title class="headline cyan darken-3">
-                    {{ item.title }}
-                  </v-card-title>
-                  <v-card-text class="text-justify brown lighten-5 font-weight-bold pt-2">
-                    {{ item.text }}
-                  </v-card-text>
-                </v-card>
-              </v-timeline-item>
-            </v-timeline>
-          </v-col>
-        </v-row>
       </v-col>
     </v-row>
   </div>
@@ -102,4 +101,8 @@ export default Vue.extend({
   height: 300px;
   filter: blur(5px);
 }
+
+.cardColor {
+  background-color: #A98C47;
+ }
 </style>>
