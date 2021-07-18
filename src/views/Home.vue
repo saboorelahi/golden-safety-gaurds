@@ -36,8 +36,13 @@
             v-for="(member,i) in team_uk" 
             :key="i"
             align="center">
-            <v-card max-width="295" >
-              <v-img height="200" :contain="false" :src="require(`../assets/${member.img}`)"></v-img>
+            <v-card 
+              max-width="295" 
+              height="340"
+              elevation="3"
+              outlined
+            >
+              <v-img height="250" :contain="false" :src="require(`../assets/${member.img}`)"></v-img>
               <v-card-subtitle class=" text-center font-weight-bold" >{{member.name}}</v-card-subtitle>
               <v-card-text class="text-center">{{member.designation}}</v-card-text>
             </v-card>
@@ -45,25 +50,27 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row >
+    <v-divider class="mt-4"></v-divider>
+    <v-row class="pt-4">
       <v-col cols="12" class="ma-3">
         <v-row>
-          <v-col align="center">
-            <h1>Team UAE</h1>
-          </v-col>
-        </v-row>
-        <v-row>
+          <v-col cols="2"></v-col>
           <v-col
             v-for="(member,i) in team_uae" 
             :key="i"
-            cols="3"
-            class="ma-0 pa-0"
+            cols="2"
+            class="ma-2 pa-2"
             align="center">
-            <v-card max-width="195">
+            <v-card>
               <v-img :src="require(`../assets/${member.img}`)"> </v-img>
               <v-card-subtitle class="text-center font-weight-bold" >{{member.name}}</v-card-subtitle>
               <v-card-text class="text-center">{{member.designation}}</v-card-text>
             </v-card>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col align="center">
+            <h1>Team UAE</h1>
           </v-col>
         </v-row>
       </v-col>
@@ -92,22 +99,22 @@ export default Vue.extend({
         ],
         team_uae: [
           {
-            name: "Mr.Rashed-Al-Obaidalla",
+            name: "Mr. Rashed-Al-Obaidalla",
             designation: "Owner",
             img: "rashed_al_obaidalla.jpg"
           },
           {
-            name: "Mr.Talal-Al-Obaidalla",
+            name: "Mr. Talal-Al-Obaidalla",
             designation: "Owner",
             img: "talal_al_obaidalla.jpg"
           },
           {
-            name: "Mr.Tariq-Al-Obaidalla",
+            name: "Mr. Tariq-Al-Obaidalla",
             designation: "Owner",
             img: "tariq_al_obaidalla.jpg"
           },
           {
-            name: "Mr.Zahid Khan",
+            name: "Mr. Zahid Khan",
             designation: "General Manager",
             img: "zahid_khan.jpg"
           }

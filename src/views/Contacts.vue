@@ -7,8 +7,11 @@
           height="850px"
         >   
           <v-row class="pa-5">
-            <v-col class="6">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffnqt-bM4wnrint-wKXIEdGAO2uwy9_YZdqj3qI6aDRW4nNA/viewform?embedded=true" width="640" height="446" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <v-col class="mt-3">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScZP7wwknMMiOg_AVnXAYRRbnADvLeL3syb5kVk1vC19T2sow/viewform?embedded=true" width="600" height="720" frameborder="0" marginheight="0" marginwidth="0">
+                Loading…
+              </iframe>
             </v-col>
             <v-col class="6">
               <v-sheet class="mt-3" elevation="10" rounded="xl">
@@ -122,10 +125,10 @@
                   </v-chip-group>
                   <v-chip-group active-class="primary--text" column>
                     <div class="pt-2 pr-4">
-                      Linkedin
+                      LinkedIn
                     </div>
                     <v-chip>
-                      <a href="https://www.linkedin.com/in/adnan-shaukat-a06206151">Reach me at LinkdIn</a>
+                      <a href="https://www.linkedin.com/in/adnan-shaukat-a06206151">Reach me on LinkedIn</a>
                     </v-chip>
                   </v-chip-group>
                 </div>

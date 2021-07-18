@@ -1,15 +1,15 @@
 <template>
   <v-app>
     <div id = "app">
-      <v-row>
-        <v-col cols="4">
+      <v-row class="ma-0 pa-0 pb-1">
+        <v-col class="ma-0 pa-0 pl-6" cols="4">
           <v-img 
             :src="require(`./assets/logo.png`)" 
-            width="200" 
-            height="100">
+            width="120" 
+            height="63">
           </v-img>
         </v-col>
-        <v-col cols="8">
+        <v-col cols="8" class="ma-0 pa-0">
           <div>
             <v-footer
               dark
@@ -19,15 +19,13 @@
                 class="flex"
                 flat
                 tile
-                
               >
                 <v-card-title class="white">
                   <v-spacer></v-spacer>
                   <v-btn
                     v-for="icon in icons"
                     :key="icon"
-                    class="mx-4 black"
-                    
+                    class="mx-4 blue"      
                     icon
                   >
                     <v-icon size="24px">
@@ -40,6 +38,7 @@
           </div>
         </v-col>
       </v-row>
+      <v-divider></v-divider>
       <div>
         <v-tabs 
           background-color="white"

@@ -1,29 +1,32 @@
 <template>
   <div class="pt-0 div">
     <v-row class="pt-0">
-      <v-col class="myDiv" cols="12">
+      <v-col class="myDiv pr-0" cols="6">
         <v-img
           class="bg"
           :src="require('../assets/careers.jpg')"
           height="605px"
         >
-          <v-row class="pa-5">
-            <v-col cols="8" sm="8" class="pt-0"></v-col>
-            <v-col cols="4" sm="4" class="pt-4">
-              <v-sheet elevation="10" rounded="xl">
-                <v-sheet class="pa-3 text-center" dark rounded="t-xl" color="#A98C47">
-                  Openings
-                </v-sheet>
-                <div class="pa-5">
-                  We are proud to offer good working conditions for our employees and if 
-                  you are someone who is eager and suitable for security then kindly share your 
-                  CV 
-                  <strong>info@goldensafetyguard.co.Uk</strong>
-                </div>
-              </v-sheet>
-            </v-col>
-          </v-row>
         </v-img>
+      </v-col>
+      <v-col class="pa-16 ma-0 career" cols="6">
+        <v-sheet elevation="4" rounded="xl">
+          <div class = "pa-5">
+            We are proud to offer good working conditions to our employees.
+          </div>
+        </v-sheet>
+        <v-sheet class="mt-5" elevation="4" rounded="xl">
+          <div class="pa-5">
+            We need people who are eager and suitable for security.
+          </div>
+        </v-sheet>
+        <v-sheet class="mt-5" elevation="4" rounded="xl">
+          <div class="pa-5">
+            Share your 
+            CV on
+            <strong>info@goldensafetyguard.co.uk</strong>
+          </div>
+        </v-sheet>
       </v-col>
     </v-row>
   </div>
@@ -39,6 +42,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.career {
+  background-color: #A98C47;
+}
 
 /* .div{
   background-image: url("../assets/careers.jpg");

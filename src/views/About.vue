@@ -4,7 +4,7 @@
       <v-col class="myDiv" cols="12">
         <v-img
           :src="require('../assets/about3.jpg')"
-          height="1120px"
+          height="1150px"
         >
           <v-row class="pa-5">
             <v-col cols="12">
