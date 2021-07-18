@@ -1,3 +1,4 @@
 module.exports = {
-    publicPath: '/golden-safety-gaurds/'
+    // publicPath: '/golden-safety-gaurds/'
+    publicPath: '/'
 }
