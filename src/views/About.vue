@@ -42,14 +42,12 @@ export default Vue.extend({
   data: () => ({
     items: [
       {
-        img: "Government Departments",
         title: "Head Office",
-        text: `Security Services has its Head office located in Dubai established in year 2016, we have well
+        text: `Golden safety security services has its Head office located in Dubai established in year 2016, we have well
             trained and experienced staff and being considered as one of the professional security services 
             provider. Now we have decided to establish a branch in UK.`,
       },
       {
-        img: "Government Departments",
         title: "Our Work, Our pride",
         text: `Prides itself on a non-violent response to any type of critical situation or incident. With our 
             courteous, professional, trained and well experienced security officers we can provide you a safe
@@ -58,16 +56,14 @@ export default Vue.extend({
             event is a success with minimum concerns to the customer or organizer.`,
       },
       {
-        img: "Government Departments",
         title: "Quality",
-        text: `GSP Security-UK recognizes the need to prove quality services. In this regard, GSP employs
+        text: `GSPG Security-UK recognizes the need to prove quality services. In this regard, GSP employs
             various levels of supervisory staff which includes the operations team and static supervisors. All sites
             are regularly visited in order to ensure the delivery of the required standard of services. We have 24 hrs. 
             Control room managed by multilingual personal so that assistance can be obtained by our valued customers according 
             to their requirements.`,
       },
       {
-        img: "Government Departments",
         title: "Professional Staff",
         text: `We believe that continuous training and education is vital for staff to be an effective security officer in
             any of these capacities. We always prefer to recruit well educated personals for the job and conduct few oral 

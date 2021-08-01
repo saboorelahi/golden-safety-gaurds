@@ -77,7 +77,7 @@
           >
             <v-card-title class="cardColor">
               <v-icon size="24px" >mdi-map-marker</v-icon>
-              <span class="body-1">Uk branch 4 Alanbrooke walk hulme M15 5EN</span>
+              <span class="body-1">UK BRANCH 4 ALANBROOKE WALK HULME M15 5EN</span>
               <v-spacer></v-spacer>
 
               <v-btn

@@ -21,7 +21,7 @@
         >
           <v-card-title class="quote font-weight-bold pb-2" >Director's Message</v-card-title>
           <v-card-text class="quote text-justify font-weight-bold pb-4 font-italic">
-            "Welcome to Golden safety property guards services , a company established in 2016 and open its busses in UAE and within a span of shorttime have decided 
+            "Welcome to Golden safety property guards services , a company established in 2016 and open its business in UAE and within a span of shorttime have decided 
             to expand its services in UK in 2020, built on the strength of a strong, highly experienced management team prioritising
             quality of service for all our customers which is borne out by our successes in securing repeat businesses and establishing long standing relationships.
             GSPGS are proud to have a team who can respond to all our clients’ needs working in full collaboration with both our clients’ teams and internally to deliver 
@@ -128,7 +128,7 @@ export default Vue.extend({
           {
             name: "Mr.Adnan",
             designation: "General Manager",
-            img: "adnan.jpg"
+            img: "adnan2.jpg"
           }
         ]
       }
