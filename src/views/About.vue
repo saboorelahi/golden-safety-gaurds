@@ -4,11 +4,11 @@
       <v-col class="myDiv" cols="12">
         <v-img
           :src="require('../assets/about3.jpg')"
-          height="1150px"
+          height="auto"
         >
-          <v-row class="pa-5">
+          <v-row>
             <v-col cols="12">
-              <v-timeline class="pa-12">
+              <v-timeline class="pa-12" :dense="$vuetify.breakpoint.smAndDown">
                 <v-timeline-item v-for="(item, i) in items" :key="i" large>
                   <template v-slot:icon>
                     <v-avatar color="grey">
@@ -17,10 +17,10 @@
                   <template v-slot:opposite>
                   </template>
                   <v-card class="elevation-2 ">
-                    <v-card-title class="headline cardColor darken-3">
+                    <v-card-title :class="{ headline: $vuetify.breakpoint.mdAndUp }" class="cardColor white--text">
                       {{ item.title }}
                     </v-card-title>
-                    <v-card-text class="text-justify brown lighten-5 font-weight-bold pt-2">
+                    <v-card-text class="brown lighten-5 font-weight-bold pt-2">
                       {{ item.text }}
                     </v-card-text>
                   </v-card>
@@ -101,4 +101,4 @@ export default Vue.extend({
 .cardColor {
   background-color: #A98C47;
  }
-</style>>
+</style>

@@ -11,16 +11,16 @@
         </v-carousel>
       </v-col>
     </v-row>
-    <v-row class="pa-5">
-      <v-col cols="6">
+    <v-row class="pa-0 ma-0">
+      <v-col class="ml-0 pl-8 pr-8" md="6" xl="6" sm="12">
         <v-card
           elevation="3"
           outlined
           shaped
           class="brown lighten-5"
         >
-          <v-card-title class="quote font-weight-bold pb-2" >Director's Message</v-card-title>
-          <v-card-text class="quote text-justify font-weight-bold pb-4 font-italic">
+          <v-card-title class="quote font-weight-bold pb-2">Director's Message</v-card-title>
+          <v-card-text class="quote font-weight-bold pb-4 font-italic">
             "Welcome to Golden safety property guards services , a company established in 2016 and open its business in UAE and within a span of shorttime have decided 
             to expand its services in UK in 2020, built on the strength of a strong, highly experienced management team prioritising
             quality of service for all our customers which is borne out by our successes in securing repeat businesses and establishing long standing relationships.
@@ -30,14 +30,14 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6">
+      <v-col class="ml-0" xl="6" md="6" sm="12">
         <v-row>
           <v-col 
             v-for="(member,i) in team_uk" 
             :key="i"
             align="center">
             <v-card 
-              max-width="295" 
+              max-width="290px" 
               height="340"
               elevation="3"
               outlined
@@ -54,23 +54,24 @@
     <v-row class="pt-4">
       <v-col cols="12" class="ma-3">
         <v-row>
-          <v-col cols="2"></v-col>
+          <v-col align="center">
+            <h1>Team UAE</h1>
+          </v-col>
+        </v-row>
+        <v-row>
           <v-col
             v-for="(member,i) in team_uae" 
             :key="i"
-            cols="2"
-            class="ma-2 pa-2"
+            sm="12"
+            md="3"
+            xl="3"
+            class="ma-0 pl-4 pr-10"
             align="center">
             <v-card>
               <v-img :src="require(`../assets/${member.img}`)"> </v-img>
               <v-card-subtitle class="text-center font-weight-bold" >{{member.name}}</v-card-subtitle>
               <v-card-text class="text-center">{{member.designation}}</v-card-text>
             </v-card>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col align="center">
-            <h1>Team UAE</h1>
           </v-col>
         </v-row>
       </v-col>

@@ -2,14 +2,13 @@
   <v-app>
     <div id = "app">
       <v-row class="ma-0 pa-0 pb-1">
-        <v-col class="ma-0 pa-0 pl-6" cols="4">
+        <v-col class="ma-0 pa-0 pl-6" sm="12">
           <v-img 
             :src="require(`./assets/logo.png`)" 
-            width="120" 
-            height="63">
+          >
           </v-img>
         </v-col>
-        <v-col cols="8" class="ma-0 pa-0">
+        <v-col sm="6" class="ma-0 pa-0">
           <div>
             <v-footer
               dark
@@ -20,7 +19,7 @@
                 flat
                 tile
               >
-                <v-card-title class="white">
+                <v-card-title class="white pl-16">
                   <v-spacer></v-spacer>
                   <v-btn
                     v-for="icon in icons"
@@ -76,21 +75,27 @@
             tile
           >
             <v-card-title class="cardColor">
-              <v-icon size="24px" >mdi-map-marker</v-icon>
-              <span class="body-1">UK BRANCH 4 ALANBROOKE WALK HULME M15 5EN</span>
-              <v-spacer></v-spacer>
-
-              <v-btn
-                v-for="icon in icons"
-                :key="icon"
-                class="mx-4"
-                dark
-                icon
-              >
-                <v-icon size="24px">
-                  {{ icon }}
-                </v-icon>
-              </v-btn>
+              <v-row>
+                <v-col sm="12" class="ml-4">
+                  <v-icon size="24px">mdi-map-marker</v-icon>
+                  <span class="body-1">
+                    UK BRANCH 4 ALANBROOKE WALK HULME M15 5EN
+                  </span>
+                </v-col>
+                <v-col sm="12" class="mt-0" :class="{ 'mt-4': $vuetify.breakpoint.smAndDown }">
+                  <v-btn
+                    v-for="icon in icons"
+                    :key="icon"
+                    class="mx-4"
+                    dark
+                    icon
+                  >
+                    <v-icon size="24px">
+                      {{ icon }}
+                    </v-icon>
+                  </v-btn>
+                </v-col>
+              </v-row>
             </v-card-title>
           </v-card>
         </v-footer>
@@ -142,4 +147,7 @@
   background-color: #A98C47;
  }
 
+  .grow, .spacer {
+    flex-grow: 0 !important;
+  }
 </style>

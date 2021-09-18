@@ -4,16 +4,16 @@
       <v-col class="myDiv" cols="12">
         <v-img
           :src="require('../assets/contact.jpg')"
-          height="850px"
+          height="auto"
         >   
-          <v-row class="pa-5">
-            <v-col class="mt-3">
+          <v-row class="pa-0 ma-0 mt-4">
+            <v-col class="ma-0 pa-0 mt-3">
               <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLScZP7wwknMMiOg_AVnXAYRRbnADvLeL3syb5kVk1vC19T2sow/viewform?embedded=true" width="600" height="720" frameborder="0" marginheight="0" marginwidth="0">
+                src="https://docs.google.com/forms/d/e/1FAIpQLScZP7wwknMMiOg_AVnXAYRRbnADvLeL3syb5kVk1vC19T2sow/viewform?embedded=true" width="auto" height="720" frameborder="0" marginheight="0" marginwidth="0">
                 Loading…
               </iframe>
             </v-col>
-            <v-col class="6">
+            <v-col class="ml-3">
               <v-sheet class="mt-3" elevation="10" rounded="xl">
                 <v-sheet class="pa-3 text-center" color="#A98C47" dark rounded="t-xl">
                   Reach us at Office
@@ -33,7 +33,7 @@
                       Email
                     </div>
                     <v-chip>
-                      info@goldensafetyguard.co.Uk
+                      info@goldensafetyguard.co.uk
                     </v-chip>
                   </v-chip-group>
                 </v-div>
@@ -120,7 +120,7 @@
                       Email
                     </div>
                     <v-chip>
-                      Shaukatadnan@yahoo.co.Uk
+                      Shaukatadnan@yahoo.co.uk
                     </v-chip>
                   </v-chip-group>
                   <v-chip-group active-class="primary--text" column>
